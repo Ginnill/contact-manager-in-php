@@ -1,0 +1,15 @@
+// colors
+
+$white: #f8f8f8;
+$black: #202020;
+$blue: #076bf6;
+
+$blue: (
+  "light": #076bf6,
+  "dark": #003d93,
+  "darker": #002233,
+);
+
+@function blue($color) {
+  @return map-get($blue, $color);
+}

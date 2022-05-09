@@ -1,0 +1,104 @@
+section.dashboard {
+  background: $white;
+  min-height: 700px;
+  .content-box {
+    margin-top: 100px;
+    position: relative;
+    .box-title {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: -30px;
+      left: 0;
+
+      .sub-title {
+        background: $white;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .contact-box {
+    .add-card {
+      a {
+        background-color: blue("light");
+        color: $white;
+        padding: 10px 15px;
+        transition: background 333ms ease-in-out;
+
+        &:hover {
+          background-color: blue("dark");
+        }
+      }
+    }
+    .card {
+      background-color: transparent;
+
+      .card-img-top {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+    }
+
+    .card-body form input[type="submit"] {
+      background-color: transparent;
+      border: none;
+      outline: none;
+
+      &:hover {
+        color: rgb(125, 1, 1) !important;
+      }
+    }
+  }
+}
+
+.modal {
+  form {
+    .file,
+    .input-text-box {
+      position: relative;
+
+      .title {
+        position: absolute;
+        top: -12px;
+        p {
+          display: inline-block;
+          color: $black;
+          margin: 0;
+          padding: 0;
+          background-color: $white;
+        }
+      }
+    }
+
+    .input-text-box {
+      .input-custom {
+        .input-text {
+          padding: 5px 15px;
+          border-radius: 5px;
+          border: 1px solid lightgray;
+          transition: border 333ms ease-in-out;
+          outline: 0;
+          width: 100%;
+          &::placeholder {
+            transition: color 333ms ease-in-out;
+            color: #212529;
+          }
+
+          &:hover {
+            &::placeholder {
+              color: lightgray;
+            }
+          }
+
+          &:focus,
+          &:focus-within {
+            border-color: gray;
+          }
+        }
+      }
+    }
+  }
+}
